@@ -1,0 +1,16 @@
+[user]
+	name = bhaskarsuper9000
+	email = bhaskarsuper9000@gmail.com
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+	excludesfile = /home/bhasky/.gitignore
+[merge]
+	tool = kdiff3
+[http]
+	sslVerify = false
