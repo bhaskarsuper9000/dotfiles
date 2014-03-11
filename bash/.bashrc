@@ -116,7 +116,12 @@ complete -cf sudo
 
 
 # COLORS
-PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[$(tput setaf 3)$(tput rev)\]\w\[$(tput sgr0)\]\[\033[m\]]$ "
+SMILEY="\[\033[32;1m\]:)\[\033[0m\]"
+FROWNY="\[\033[31;1m\]:(\[\033[0m\]"
+LAST_CMD="if [ \$? = 0 ]; then echo \"${SMILEY}\"; else echo \"${FROWNY}\"; fi"
+
+PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[$(tput setaf 3)$(tput rev)\]\w\[$(tput sgr0)\]\[\033[m\]]\`${LAST_CMD}\`\[\033[33m\]\$(__git_ps1 "[%s]") \[\033[0m\]\$ "
+
 
 # LESS man page colors
 export LESS_TERMCAP_mb=$'\E[01;31m'
