@@ -132,11 +132,6 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-#user defined scripts
-export http_proxy="http://133310018:15091990@netmon.iitb.ac.in:80/"
-export https_proxy="https://133310018:15091990@netmon.iitb.ac.in:80/"
-export ftp_proxy="ftp://133310018:15091990@netmon.iitb.ac.in:80/"
-
 #Java path setup
 export JAVA_HOME="/usr/lib/jvm/jdk1.7.0_45"
 export PATH="$PATH:$JAVA_HOME/bin"
